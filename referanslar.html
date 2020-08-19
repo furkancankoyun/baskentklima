@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr-tr">
+
+  <head>
+    <title>Başkent Klima - Referanslar</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ankara Klima, Başkent Klima, Klima Bakım, Klima Montaj, Klima Onarım, Klima Servisi, Klima Temizliği, Klima Tamiri, Midea, Panasonic, Diamond, Electra" />
+
+    <meta property="og:title" content="Başkent Klima - Referanslar" />
+    <meta property="og:image" content="http://www.baskentklima.com/images/cover.png" />
+    <meta property="og:url" content="http://www.baskentklima.com" />
+    <meta property="og:description" content="Ankara Klima, Başkent Klima, Klima Bakım, Klima Montaj, Klima Onarım, Klima Servisi, Klima Temizliği, Klima Tamiri, Midea, Panasonic, Diamond, Electra" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#27498C">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Başkent Klima">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-startup-image" href="http://www.baskentklima.com/images/logox57.png">
+    <link rel="apple-touch-icon" href="http://www.baskentklima.com/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.baskentklima.com/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://www.baskentklima.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="http://www.baskentklima.com/images/touch-icon-ipad-retina.png">
+    <link href="http://www.baskentklima.com/images/logox16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="http://www.baskentklima.com/images/logox32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="http://www.baskentklima.com/images/logox57.png" rel="icon" type="image/png" sizes="57x57">
+    <link href="http://www.baskentklima.com/images/logox114.png" rel="icon" type="image/png" sizes="114x114">
+    <link href="http://www.baskentklima.com/images/logox128.png" rel="icon" type="image/png" sizes="128x128">
+    <link href="http://www.baskentklima.com/images/logox144.png" rel="icon" type="image/png" sizes="144x144">
+    <link href="http://www.baskentklima.com/images/logox196.png" rel="icon" type="image/png" sizes="196x196">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/joomla.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/referanslar.css" type="text/css">
+    <link rel="stylesheet" href="css/template_css.css" type="text/css">
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="js/caption.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jQuery(window).on('load', function () {
+        new JCaption('img.caption');
+      });
+    </script>
+    <script type="text/javascript">
+      function isAppleDevice() {
+        return (
+          (navigator.userAgent.toLowerCase().indexOf("ipad") > -1) ||
+          (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) ||
+          (navigator.userAgent.toLowerCase().indexOf("ipod") > -1)
+        );
+      }
+      (function (jQuery) {
+        jQuery.fn.dropDownMenu_topmenu = function (options) {
+          var defaults = {
+            speed: 300,
+            effect: 'fadeToggle'
+          };
+          var options = jQuery.extend(defaults, options);
+          return this.each(function () {
+            var screenWidth = jQuery("body").width();
+            jQuery('.mnu_topmenu ul').hide();
+            jQuery('.mnu_topmenu li ul li').filter(':last-child').css('border-bottom', 'none');
+            if (screenWidth > 920) {
+              jQuery('.mnu_topmenu li').hover(function () {
+                jQuery(this).children('ul').stop()[options.effect](options.speed);
+              }, function () {
+                jQuery(this).css('position', 'relative').children('ul').stop()[options.effect](options.speed);
+              });
+            } else {
+              jQuery('.mnu_topmenu li a[href="#"]').toggle(function () {
+                jQuery(this).parent().find('ul:first:not(:visible)').stop(true, true)[options.effect](options.speed);
+              }, function () {
+                jQuery(this).parent().css('position', 'relative').find('ul:first:visible').stop(true, true)[options.effect](options.speed);
+              });
+              jQuery("nav ul.navv").find("li > ul").prev().addClass("firstClick");
+            }
+            jQuery(document).on("click", ".mnu_topmenu a", function () {
+              if (!jQuery(this).hasClass("firstClick"))
+                jQuery(this).addClass("firstClick");
+              return true;
+            });
+            jQuery(document).on("click", ".mnu_topmenu .firstClick", function (e) {
+              if ((jQuery("html.no-touchevents").length == 1 && screenWidth > 920) || (isAppleDevice() && screenWidth > 920)) {
+                return true;
+              }
+              e.preventDefault();
+              var href = jQuery(this).attr("href");
+              var target = jQuery(this).attr("target");
+              var link = jQuery(this);
+              jQuery(this).attr("href", "#");
+              jQuery(this).attr("target", "");
+              jQuery(this).removeClass("firstClick");
+              setTimeout(function () {
+                link.attr("href", href);
+                link.attr("target", target);
+              }, 200);
+              if (screenWidth > 920) {
+                jQuery(this).children('ul').stop()[options.effect](options.speed);
+              }
+              else
+                jQuery(this).parent().find('ul:first:not(:visible)').stop(true, true)[options.effect](options.speed);
+            });
+            jQuery(window).resize(function () {
+              var screenWidth = jQuery("body").width();
+              if (screenWidth > 920)
+                jQuery("nav ul.navv").find("li > ul").prev().removeClass("firstClick");
+              else
+                jQuery("nav ul.navv").find("li > ul").prev().addClass("firstClick");
+            });
+          });
+        };
+      })(jQuery);
+      jQuery(document).ready(function () {
+        jQuery('.mnu_topmenu').dropDownMenu_topmenu({
+          speed: 300,
+          effect: 'fadeToggle'
+        });
+        //hover menu fix	
+        setTimeout(function () {
+          jQuery('#blocker').remove();
+          jQuery("nav ul.navv").find("li > ul").prev().addClass("firstClick");
+        }, 1000)
+        //first click for touchecren wide devices
+      });
+    </script>
+    <script type="text/javascript" src="js/responsive-nav.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+
+  </head>
+
+  <body class="sparky_inner">
+    <div id="blocker"></div>
+    <div class="sparky_wrapper">
+      <div class="sparky_full toprow one">
+        <div class="container">
+          <div class="row">
+            <div class="cell mp_top1 span6">
+              <div class="cell_pad">
+                <div class="moduletable">
+                  <div class="custom">
+                    <ul>
+                      <li class="fa fa-phone-square"></li>
+                      <li style="margin-left: -12px;">0530 157 26 26</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell mp_top2 span6">
+              <div class="cell_pad">
+                <div class="moduletable">
+                  <div class="custom">
+                    <ul class="mobile-phone-section">
+                      <li class="fa fa-envelope-square" style="float: right;"></li>
+                      <li style="margin-right: 17px;"><a href="mailto:baskentklima06@gmail.com">baskentklima06@gmail.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="sparky_full logorow one">
+        <div class="container">
+          <div class="row">
+            <div class="cell mp_logo span3">
+              <div class="cell_pad">
+                <div class="sparky_logo_image"><a href="index.html"><img src="images/baskentklima_logo.png" alt="Başkent Klima"></a></div>
+              </div>
+            </div>
+            <div class="cell mp_topmenu span9">
+              <div class="sparky_menu">
+                <nav class="container_topmenu">
+                  <ul class="menu navv mnu_topmenu">
+                    <li class="item-195"><a href="index.html">Anasayfa</a></li>
+                    <li class="item-467"><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="item-468"><a href="hizmetler.html">Hizmetler</a></li>
+                    <li class="item-469 current active"><a href="referanslar.html">Referanslar</a></li>
+                    <li class="item-470"><a href="faydali-bilgiler.html">Faydalı Bilgiler</a></li>
+                    <li class="item-464"><a href="iletisim.html">İletişim</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="sparky_full contentrow">
+        <div class="container">
+          <div class="row">
+            <div class="content_sparky span12">
+              <div class="cell_pad">
+                <div id="system-message-container">
+                </div>
+                <div class="abovecontent">
+                  <div class="moduletable">
+                    <div aria-label="breadcrumbs" role="navigation">
+                      <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+                        <li>
+                          Buradasınız: &#160;
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                          <a itemprop="item" href="index.html" class="pathway"><span itemprop="name">Anasayfa</span></a>
+                          <span class="divider">
+                            &gt;&gt; </span>
+                          <meta itemprop="position" content="1">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+                          <span itemprop="name">
+                            Referanslar </span>
+                          <meta itemprop="position" content="2">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_sparky_main">
+                  <div class="item-page" itemscope itemtype="http://schema.org/Article">
+                    <meta itemprop="inLanguage" content="tr-TR">
+                    <div class="page-header">
+                      <h1> Referanslar </h1>
+                    </div>
+                    <div itemprop="articleBody">
+                      <div style="display: inline-block; width: 100%; margin-bottom: 10px; text-align: center; font-weight: bold; font-size: 20px; color: #27498C;">BAŞLICA REFERANSLARIMIZ</div>
+                      <p>
+                        <span id="referanslar" style="display: inline-block; width: 100%; text-align: center;">
+                          <img style="margin: 8px;" src="images/sosyal_is_sendika.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/harita_kadastro_odasi.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/elektrik_muhendisleri_odasi.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/egitim_bilim_emekcileri.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/cld.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/karacan.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/kazan-soda-elektrik.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/eti-soda.png" alt width="145px">
+                          <img style="margin: 8px;" src="images/ciner-group.jpg" alt width="145px">
+                          <img style="margin: 8px;" src="images/akin-dil.jpeg" alt width="145px">
+                        </span>
+                      </p>
+                      <p style="margin: 0px; padding: 0px; height: 5px;"> </p>
+                      <hr>
+                      <p style="margin: 0px; padding: 0px; height: 20px;"> </p>
+                      <div style="display: inline-block; column-count: 3; -webkit-column-count: 3; column-gap: 110px; -webkit-column-gap: 110px; color: #1D3159;">
+                        <ul style="padding: 0px; margin: 0px; list-style-type: none;">
+                          <li>Başbakanlık Basımevi Döner Sermaye İşletmesi</li>
+                          <li>Türkiye Belediyeler Birliği Başkanlığı</li>
+                          <li>Ziraat Bankası - Yenişehir Şube</li>
+                          <li>Ziraat Bankası - Koordinatörlük Müdürlüğü</li>
+                          <li>Anadolu Restoran İşletmeleri - Kentpark</li>
+                          <li>Enermak Enerji Makina</li>
+                          <li>Maltepe Eczanesi</li>
+                          <li>Meriç Eczanesi</li>
+                          <li>Uğraş Basın Yayıncılık</li>
+                          <li>Park Termik Elektrik</li>
+                          <li>ETİ Soda Üretim Pazarlama Nakliyat</li>
+                          <li>Market Spor Malzemeleri</li>
+                          <li>Etichet - Ersoylar Spor Giyim</li>
+                          <li>BH Gıda ve Tüketim Malları</li>
+                          <li>Türkiye Halk Bankası - Ostim Alınteri</li>
+                          <li>Starton Otel Ankara</li>
+                          <li>Akın Dil Eğitim Kurumları</li>
+                          <li>Ciner Grubu</li>
+                          <li>Kazan Soda Elektrik</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="sparky_full copyrightrow">
+        <div class="container">
+          <div class="row responsive-rows">
+            <div class="cell mp_copyright span4">
+              <div class="cell_pad">
+                <p class="copyright">Copyright &copy; 2020 Başkent Klima</p>
+              </div>
+            </div>
+            <div class="cell mp_copyright span4">
+              <div class="cell_pad" style="text-align: center; color: #ccc;">
+                <a style="color: inherit;" href="https://tigris.software" target="_blank" rel="noopener noreferrer">Tigris Software</a>
+              </div>
+            </div>
+            <div class="cell mp_footer span4">
+              <div class="cell_pad">
+                <div class="moduletable">
+                  <div class="custom">
+                    <p><a href="#">Yukarı Çık <i class="fa fa-arrow-circle-up"></i></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/hot_sparks.js"></script>
+    <script type="text/javascript">
+      if (jQuery(".container_topmenu").length) {
+        var navigation = responsiveNav(".container_topmenu");
+      }
+    </script>
+  </body>
+
+</html>

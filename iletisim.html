@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr-tr">
+
+  <head>
+    <title>Başkent Klima - İletişim</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ankara Klima, Başkent Klima, Klima Bakım, Klima Montaj, Klima Onarım, Klima Servisi, Klima Temizliği, Klima Tamiri, Midea, Panasonic, Diamond, Electra" />
+
+    <meta property="og:title" content="Başkent Klima - İletişim" />
+    <meta property="og:image" content="http://www.baskentklima.com/images/cover.png" />
+    <meta property="og:url" content="http://www.baskentklima.com" />
+    <meta property="og:description" content="Ankara Klima, Başkent Klima, Klima Bakım, Klima Montaj, Klima Onarım, Klima Servisi, Klima Temizliği, Klima Tamiri, Midea, Panasonic, Diamond, Electra" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#27498C">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Başkent Klima">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-startup-image" href="http://www.baskentklima.com/images/logox57.png">
+    <link rel="apple-touch-icon" href="http://www.baskentklima.com/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.baskentklima.com/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://www.baskentklima.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="http://www.baskentklima.com/images/touch-icon-ipad-retina.png">
+    <link href="http://www.baskentklima.com/images/logox16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="http://www.baskentklima.com/images/logox32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="http://www.baskentklima.com/images/logox57.png" rel="icon" type="image/png" sizes="57x57">
+    <link href="http://www.baskentklima.com/images/logox114.png" rel="icon" type="image/png" sizes="114x114">
+    <link href="http://www.baskentklima.com/images/logox128.png" rel="icon" type="image/png" sizes="128x128">
+    <link href="http://www.baskentklima.com/images/logox144.png" rel="icon" type="image/png" sizes="144x144">
+    <link href="http://www.baskentklima.com/images/logox196.png" rel="icon" type="image/png" sizes="196x196">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/hot_maps.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/joomla.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/iletisim.css" type="text/css">
+    <link rel="stylesheet" href="css/template_css.css" type="text/css">
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jQuery(function ($) { $("#myTab a").click(function (e) { e.preventDefault(); $(this).tab("show"); }); });
+      jQuery(function ($) { $("#myTabTabs").append($("<li class=\" active\"><a href=\"#basic-details\" data-toggle=\"tab\">\u0130leti\u015fim<\/a><\/li>")); });
+    </script>
+    <script type="text/javascript">
+      function isAppleDevice() {
+        return (
+          (navigator.userAgent.toLowerCase().indexOf("ipad") > -1) ||
+          (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) ||
+          (navigator.userAgent.toLowerCase().indexOf("ipod") > -1)
+        );
+      }
+      (function (jQuery) {
+        jQuery.fn.dropDownMenu_topmenu = function (options) {
+          var defaults = {
+            speed: 300,
+            effect: 'fadeToggle'
+          };
+          var options = jQuery.extend(defaults, options);
+          return this.each(function () {
+            var screenWidth = jQuery("body").width();
+            jQuery('.mnu_topmenu ul').hide();
+            jQuery('.mnu_topmenu li ul li').filter(':last-child').css('border-bottom', 'none');
+            if (screenWidth > 920) {
+              jQuery('.mnu_topmenu li').hover(function () {
+                jQuery(this).children('ul').stop()[options.effect](options.speed);
+              }, function () {
+                jQuery(this).css('position', 'relative').children('ul').stop()[options.effect](options.speed);
+              });
+            } else {
+              jQuery('.mnu_topmenu li a[href="#"]').toggle(function () {
+                jQuery(this).parent().find('ul:first:not(:visible)').stop(true, true)[options.effect](options.speed);
+              }, function () {
+                jQuery(this).parent().css('position', 'relative').find('ul:first:visible').stop(true, true)[options.effect](options.speed);
+              });
+              jQuery("nav ul.navv").find("li > ul").prev().addClass("firstClick");
+            }
+            jQuery(document).on("click", ".mnu_topmenu a", function () {
+              if (!jQuery(this).hasClass("firstClick"))
+                jQuery(this).addClass("firstClick");
+              return true;
+            });
+            jQuery(document).on("click", ".mnu_topmenu .firstClick", function (e) {
+              if ((jQuery("html.no-touchevents").length == 1 && screenWidth > 920) || (isAppleDevice() && screenWidth > 920)) {
+                return true;
+              }
+              e.preventDefault();
+              var href = jQuery(this).attr("href");
+              var target = jQuery(this).attr("target");
+              var link = jQuery(this);
+              jQuery(this).attr("href", "#");
+              jQuery(this).attr("target", "");
+              jQuery(this).removeClass("firstClick");
+              setTimeout(function () {
+                link.attr("href", href);
+                link.attr("target", target);
+              }, 200);
+              if (screenWidth > 920) {
+                jQuery(this).children('ul').stop()[options.effect](options.speed);
+              }
+              else
+                jQuery(this).parent().find('ul:first:not(:visible)').stop(true, true)[options.effect](options.speed);
+            });
+            jQuery(window).resize(function () {
+              var screenWidth = jQuery("body").width();
+              if (screenWidth > 920)
+                jQuery("nav ul.navv").find("li > ul").prev().removeClass("firstClick");
+              else
+                jQuery("nav ul.navv").find("li > ul").prev().addClass("firstClick");
+            });
+          });
+        };
+      })(jQuery);
+      jQuery(document).ready(function () {
+        jQuery('.mnu_topmenu').dropDownMenu_topmenu({
+          speed: 300,
+          effect: 'fadeToggle'
+        });
+        //hover menu fix	
+        setTimeout(function () {
+          jQuery('#blocker').remove();
+          jQuery("nav ul.navv").find("li > ul").prev().addClass("firstClick");
+        }, 1000)
+        //first click for touchecren wide devices
+      });
+    </script>
+    <script type="text/javascript" src="js/responsive-nav.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+
+  </head>
+
+  <body class="sparky_inner">
+    <div id="blocker"></div>
+    <div class="sparky_wrapper">
+      <div class="sparky_full toprow one">
+        <div class="container">
+          <div class="row">
+            <div class="cell mp_top1 span6">
+              <div class="cell_pad">
+                <div class="moduletable">
+                  <div class="custom">
+                    <ul>
+                      <li class="fa fa-phone-square"></li>
+                      <li style="margin-left: -12px;">0530 157 26 26</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell mp_top2 span6">
+              <div class="cell_pad">
+                <div class="moduletable">
+                  <div class="custom">
+                    <ul class="mobile-phone-section">
+                      <li class="fa fa-envelope-square" style="float: right;"></li>
+                      <li style="margin-right: 17px;"><a href="mailto:baskentklima06@gmail.com">baskentklima06@gmail.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="sparky_full logorow one">
+        <div class="container">
+          <div class="row">
+            <div class="cell mp_logo span3">
+              <div class="cell_pad">
+                <div class="sparky_logo_image"><a href="index.html"><img src="images/baskentklima_logo.png" alt="Başkent Klima"></a></div>
+              </div>
+            </div>
+            <div class="cell mp_topmenu span9">
+              <div class="sparky_menu">
+                <nav class="container_topmenu">
+                  <ul class="menu navv mnu_topmenu">
+                    <li class="item-195"><a href="index.html">Anasayfa</a></li>
+                    <li class="item-467"><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="item-468"><a href="hizmetler.html">Hizmetler</a></li>
+                    <li class="item-469"><a href="referanslar.html">Referanslar</a></li>
+                    <li class="item-470"><a href="faydali-bilgiler.html">Faydalı Bilgiler</a></li>
+                    <li class="item-464 current active"><a href="iletisim.html">İletişim</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="sparky_full contentrow">
+        <div class="container">
+          <div class="row">
+            <div class="content_sparky span12">
+              <div class="cell_pad">
+                <div id="system-message-container">
+                </div>
+                <div class="abovecontent">
+                  <div class="moduletable">
+                    <div aria-label="breadcrumbs" role="navigation">
+                      <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+                        <li>
+                          Buradasınız: &#160;
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                          <a itemprop="item" href="index.html" class="pathway"><span itemprop="name">Anasayfa</span></a>
+                          <span class="divider">
+                            &gt;&gt; </span>
+                          <meta itemprop="position" content="1">
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+                          <span itemprop="name">
+                            İletişim </span>
+                          <meta itemprop="position" content="2">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_sparky_main">
+                  <div class="contact" itemscope itemtype="https://schema.org/Person">
+                    <div class="page-header">
+                      <h2>
+                        <span class="contact-name" itemprop="name">Başkent Klima</span>
+                      </h2>
+                    </div>
+                    <ul class="nav nav-tabs" id="myTabTabs"></ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div id="basic-details" class="tab-pane active">
+                        <dl class="contact-address dl-horizontal" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                          <dt>
+                            <span class="jicons-text">
+                              Adres: </span>
+                          </dt>
+                          <dd>
+                            <span class="contact-street" itemprop="streetAddress">
+                              Aşağı Eğlence Mh. Doğançay Sk. No:32/A, Etlik <br>
+                            </span>
+                          </dd>
+                          <dd>
+                            <span class="contact-suburb" itemprop="addressLocality">
+                              Keçiören/ANKARA <br>
+                            </span>
+                          </dd>
+                          <dt>
+                            <span class="jicons-text" itemprop="email">
+                              e-Posta: </span>
+                          </dt>
+                          <dd>
+                            <span class="contact-emailto">
+                              <span id="cloak8266654c2953cb993b381510eccc10d3">This email address is being protected from spambots. You need JavaScript enabled to view it.</span>
+                              <script type="text/javascript">
+                                document.getElementById('cloak8266654c2953cb993b381510eccc10d3').innerHTML = '';
+                                var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                var path = 'hr' + 'ef' + '=';
+                                var addy8266654c2953cb993b381510eccc10d3 = '&#105;nf&#111;' + '&#64;';
+                                addy8266654c2953cb993b381510eccc10d3 = addy8266654c2953cb993b381510eccc10d3 + 'b&#97;sk&#101;ntkl&#105;m&#97;' + '&#46;' + 'c&#111;m';
+                                var addy_text8266654c2953cb993b381510eccc10d3 = '&#105;nf&#111;' + '&#64;' + 'b&#97;sk&#101;ntkl&#105;m&#97;' + '&#46;' + 'c&#111;m'; document.getElementById('cloak8266654c2953cb993b381510eccc10d3').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy8266654c2953cb993b381510eccc10d3 + '\'>' + addy_text8266654c2953cb993b381510eccc10d3 + '<\/a>';
+                              </script> </span>
+                          </dd>
+                          <dt>
+                            <span class="jicons-text">
+                              Telefon: </span>
+                          </dt>
+                          <dd>
+                            <span class="contact-telephone" itemprop="telephone">
+                              0312 381 85 85 </span>
+                          </dd>
+                          <dt>
+                            <span class="jicons-text">
+                              Cep Telefonu: </span>
+                          </dt>
+                          <dd>
+                            <span class="contact-mobile" itemprop="telephone">
+                              0530 157 26 26 </span>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="belowcontent">
+                  <div class="moduletable">
+                    <iframe height="300" style="border:none; width:100%" src="//maps.google.com/maps?q=Aşağı+Eğlence+Mh.+Doğançay+Sk.+No:32/A,+Etlik&amp;ie=UTF8&amp;view=map&amp;f=q&amp;saddr=Aşağı,+Eğlence,+Mh.,+Doğançay,+Sk.,+No:32/A,,+Etlik&amp;output=embed"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="sparky_full copyrightrow">
+        <div class="container">
+          <div class="row responsive-rows">
+            <div class="cell mp_copyright span4">
+              <div class="cell_pad">
+                <p class="copyright">Copyright &copy; 2020 Başkent Klima</p>
+              </div>
+            </div>
+            <div class="cell mp_copyright span4">
+              <div class="cell_pad" style="text-align: center; color: #ccc;">
+                <a style="color: inherit;" href="https://tigris.software" target="_blank" rel="noopener noreferrer">Tigris Software</a>
+              </div>
+            </div>
+            <div class="cell mp_footer span4">
+              <div class="cell_pad">
+                <div class="moduletable">
+                  <div class="custom">
+                    <p><a href="#">Yukarı Çık <i class="fa fa-arrow-circle-up"></i></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/hot_sparks.js"></script>
+    <script type="text/javascript">
+      if (jQuery(".container_topmenu").length) {
+        var navigation = responsiveNav(".container_topmenu");
+      }
+    </script>
+  </body>
+
+</html>
